@@ -3,4 +3,4 @@ curl -sSL https://raw.githubusercontent.com/pdm-project/pdm/main/install-pdm.py 
 export PATH="/opt/render/.local/bin:$PATH"
 eval "$(pdm --pep582)"
 echo "Running pdm install..."
-pdm -vv install
+pdm install -vv --prod --no-lock --no-editable
